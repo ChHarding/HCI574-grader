@@ -34,6 +34,7 @@ tmp
 
 #WTH is that needed???
 !nbgrader_convas_tool
+!nbgrader_convas_tool/*
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
