@@ -33,8 +33,8 @@ tmp
 !tmp/.gitkeep
 
 #WTH is that needed???
-!nbgrader_convas_tool
-!nbgrader_convas_tool/*
+!nbgrader_canvas_tool
+!nbgrader_canvas_tool/*
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
