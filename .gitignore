@@ -4,10 +4,6 @@
 .ipynb_checkpoints
 
 
-#WTH is that needed???
-!nbgrader_canvas_tool
-!nbgrader_canvas_tool/*
-
 # need to ignore any student data!
 gradebook.db
 student_list.csv
