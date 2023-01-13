@@ -15,18 +15,18 @@ nbgrader_canvas_tool/gradebook.db
 nbgrader_canvas_tool/student_list.csv
 
 # content of assignment folders
-release
-source
+release/*
+source/*
 
 # grading related folders
-autograded
-exchange
-feedback
-submitted
-zipped_HWs
+autograded/*
+exchange/*
+feedback/*
+submitted/*
+zipped_HWs/*
 
 # used for getting and processing student list
-tmp 
+tmp/*
 
 # white listings
 !.gitignore
