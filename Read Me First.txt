@@ -1,0 +1,11 @@
+HCI574 ReadMe folder contains all the info about how to run things
+Start with Readme.md in the HCI574 ReadMe folder
+
+For a new year, autograded, exchange, feedback and release can be emptyied and the gradebook.db database file can be deleted.
+
+Do NOT empty source, as it contains the master code for all HWs!
+(hmtl contains html renderings of the with-solution notebooks for the TA)
+
+nbgarder_canvas_tool contains the python code used by the TA for grading.
+
+install.sh, requirements.txt and nbgarder_config.py are used when setting up a new year.
