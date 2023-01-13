@@ -4,7 +4,8 @@
 .ipynb_checkpoints
 
 # central db for nbgrader
-gradbook.db
+gradebook.db
+student_list.csv
 
 # content of assignment folders
 release
@@ -31,6 +32,8 @@ tmp
 !zipped_HWs/.gitkeep
 !tmp/.gitkeep
 
+#WTH is that needed???
+!nbgrader_convas_tool
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
