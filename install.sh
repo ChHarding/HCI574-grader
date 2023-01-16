@@ -1,12 +1,8 @@
 #!/bin/bash
 
-#known bugs
-#does note remove old aliases from .zshrc and .bash_profile
 
-#install virtual envrionment
-pip install --user virtualenv
+# CH Jan 16: Removed anything with conda venvs
 
-#setup canvas token
 nbcanrc_file=~/.nbcanrc
 reconf="true"
 
@@ -51,52 +47,19 @@ fi
 
 
 
-#setup virtual envrionment directory
-venv_dir=~/hci574_env
-if [ -d $venv_dir ]
-then
-  #ask user to reinstall tools if previous envrionment is found
-  while true; do
-    read -p "Previous environment installed. Reinstall? (yes/no) " yn
-    case $yn in
-        [Yy]* ) printf "reinstalling...\n"; break;;
-        [Nn]* ) printf "exiting...\n"; exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-  done
-else
-  printf "installing..."
-fi
-
-#remove old virtual envrionment folder (if exists) and create a new one
-rm -rf $venv_dir
-python3 -m venv $venv_dir 
-
-printf "created environment\n"
-
-#activate virtual environment
-printf "activating virtual environment"
-source $venv_dir/bin/activate
-
-
+#
 printf "installing dependencies"
 pip3 install -r requirements.txt
 
-jupyter nbextension install --user --py nbgrader --overwrite
-jupyter nbextension enable --user --py nbgrader
-jupyter serverextension enable --user --py nbgrader
 
 #Configure Student List
 printf "\nConfiguring Student List\n"
 cd nbgrader_canvas_tool/
 python3 nbgrader_canvas_tool.py export-student-list /tmp/student_list.csv
 nbgrader db student import /tmp/student_list.csv
-rm /tmp/student_list.csv
+#rm /tmp/student_list.csv
 cd ..
 
-
-#deactivating envrionment and ending install
-deactivate
 
 #install aliases for zsh and bash
 bash_config=~/.bash_profile
