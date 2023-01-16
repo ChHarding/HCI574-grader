@@ -1,0 +1,9 @@
+[canvas]
+access-token=10835~Tpp89I6Kk8coqt7hDxlz1CJx51gjXyRYc9WdnCsjg2jTQGbUugGhp8uVOCRckILp
+root-url=https://canvas.iastate.edu/
+course-id=98545
+
+[nbgrader]
+root-dir=C:\Users\charding\Box\HCI574\HCI574-grader
+%exchange-dir=/Users/<your-username>/Projects/574/HCI574_<course-year>>_HW/exchange/  % if dirs are not all in proj. root
+course-name=HCI574_for_CHris

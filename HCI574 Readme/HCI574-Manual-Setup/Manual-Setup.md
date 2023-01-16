@@ -1,3 +1,6 @@
+# updated by Chris Speing 2023
+
+
 # Environment Setup
 This document details how to setup the grading environment for HCI 574. This document was written for Mac OS X, but these instructions should also work for many linux distributions. 
 
@@ -36,6 +39,11 @@ sudo pip3 install notebook
 ```
 sudo pip3 install nbgrader
 ```
+
+__ Chris 2023__ just installing nbgrader will already install all lab and server extensions. jupyter nbextension and jupyter serverextension have been depreciated!
+
+
+Not needed!
 ``` 
 sudo jupyter nbextension install --user --py nbgrader --overwrite
 ```
@@ -47,7 +55,7 @@ sudo jupyter serverextension enable --user --py nbgrader
 ```
 
 # Setup Canvas Access Token
-Canvas' API uses access tokens. Access tokens allow 3rd party applications, like the tools in this environment, to edit grades and download homeworks programatically.
+Canvas' API uses access tokens. Access tokens allow 3rd party applications, like the tools in this environment, to edit grades and download homeworks programmatically.
 1. Generate Canvas Access Token  
     - Get access to the HCI 574 Canvas page
     - Goto: https://canvas.iastate.edu/profile/settings
